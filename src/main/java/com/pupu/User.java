@@ -15,7 +15,7 @@ public class User implements Serializable {
     private int age;
 
 
-    //如下的两个方法writeObject，readObject可以绕过transient实现序列化
+    //如下的两个方法writeObject，readObject可以绕过transient首先是
     private void writeObject(java.io.ObjectOutputStream s)
             throws java.io.IOException {
         s.defaultWriteObject();
